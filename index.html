@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
+   
     <title>Document</title>
 </head>
 
@@ -14,14 +15,14 @@
         <div class="navbar">
             <img src="src/logo.png" class="logo">
             <nav>
-                <ul>
-                    <li ><a href="">some text 1</a></li>
-                    <li ><a href="">some text 2</a></li>
-                    <li ><a href="">some text 3</a></li>  
-                    <li ><a href="">some text 4</a></li>  
+                <ul id="menuList">
+                    <li><a href="">some text 1</a></li>
+                    <li><a href="">some text 2</a></li>
+                    <li><a href="">some text 3</a></li>
+                    <li><a href="">some text 4</a></li>
                 </ul>
             </nav>
-            <img src="src/menu.png" class="menu-icon">
+            <img src="src/menu.png" class="menu-icon" onclick="togglemenu()">
         </div>
         <div class="row">
             <div class="col-1">
@@ -30,9 +31,26 @@
                 <p>some text 8</p>
                 <h4>some text 9</h4>
                 <button type="button">some text 10 <img src="./src/arrow.png"></button>
-            </div>  
+            </div>
+            <div class="col-2">
+                <img src="./src/controller.png" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="./src/add.png">
+                    <p><small>some text 11</small></p>
+                </div>
+            </div>
+
         </div>
-    </div>
+        <div class="social-links">
+            <img src="./src/fb.png">
+            <img src="./src/tw.png">
+            <img src="./src/ig.png">
+        </div>
+    </div> 
+    
+    <script src="./scripts/toggleMenu.js"></script>
+    
 </body>
 
 </html>
