@@ -20,7 +20,7 @@
 }
 
 .logo{
-    width: 50px;
+    width: 40px;
     cursor: pointer;
     margin: 30px 0;
 }
@@ -196,6 +196,86 @@ button:hover{
     .menu-icon{
         display: block;
     }
+    .col-1{
+        flex-basis: 100%;
+        position: relative;
+        margin-left: 50px;
+    }
+
+    .col-1 h2{
+        font-size: 44px;
+    }
+
+    .col-1 h3{
+        font-size: 25px;
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    button{
+        width: 140px;
+        border: 0;
+        padding: 12px 10px;
+        outline: none;
+        color: #fff;
+        background: linear-gradient(to right,#fb5283,#ff3527);
+        border-radius: 6px;
+        cursor: pointer;
+        transition: width 0.5S;
+    }
+    
+    button img{
+        width: 30px;
+        display: none;
+    }
+    
+    button:hover img{
+        display: block;
+    }
+    
+    button:hover{
+        width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+ 
+ 
+    
+    .col-2 .controller{
+        visibility: hidden;
+      
+    }
+    
+   
+    
+    .add-btn img{
+        width: 35px;
+        margin-bottom: 5px;
+    }
+    
+    .add-btn{
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .social-links img{
+        height: 13px;
+        margin: 20px;
+        cursor: pointer;
+    }
+    .social-links{
+        text-align: center;
+    }
+
+    
+
+  
      
     
 }

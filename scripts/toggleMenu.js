@@ -1,21 +1,23 @@
 
 
-// var menuList = document.getElementById("menuList");
+var menuList = document.getElementById("menuList");
 
 
-// menuList.style.maxHeight = "0px";
+menuList.style.maxHeight = "0px";
+menuList.style.visibility="hidden"
 
-// console.log(menuList.style.maxHeight)
+console.log(menuList.style.maxHeight)
 
-// function togglemenu(){
+function togglemenu(){
     
  
-//     if(menuList.style.maxHeight == "0px"){
-        
-//         menuList.style.maxHeight = "130px;"
-//     }
-//     else{
-//         menuList.style.maxHeight = "0px";
-//         onsole.log( 123)
-//     }
-// }
+    if(menuList.style.maxHeight == "0px"){
+    
+        menuList.style.maxHeight = "130px";
+        menuList.style.visibility="visible"
+        console.log( 123)
+    }
+    else{
+        menuList.style.maxHeight = "0px";
+    }
+}
