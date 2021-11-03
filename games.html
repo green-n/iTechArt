@@ -23,7 +23,7 @@
        <div class="container"> <div class="navbar">
           <img src="src/logo.png" class="logo">
            <nav>
-             <ul id="menuList">
+             <ul id="menuList" >
                 <li><a href="">my profile</a></li>
                 <li><a href="./index.html">main page</a></li>
                 <li><a href="">about us</a></li>
@@ -35,6 +35,77 @@
     </section>
  
     <!-- Game Creatio section starts  -->
+    <section>
+     
+
+<div class="modal-container" id="modal-opened">
+  <div class="modal">
+
+    <div class="modal__details">
+      <h1 class="modal__title">Create Game menu</h1>
+      <div class="melement">
+        <h2>choose map
+            <form>
+              <div>
+                <input list="browse">
+      
+                <datalist id="browse">
+                  <option value="du hast map">
+                  <option value="de office">
+                  <option value="do re mi">
+                </datalist>
+              </div>
+            </form>
+          </h2>
+
+      </div>
+      <div class="melement">
+        <h2>
+            add description
+            
+        </h2>
+
+        <input type="text">
+
+      </div>
+      <div class="melement">
+        <h2>choose map
+            <form>
+              <div>
+                <input list="difficulty">
+      
+                <datalist id="difficulty">
+                  <option value="begginer" >
+                  <option value="upper begginer" >
+                  <option value="intermrdiate" >
+                  <option value="upper intermediate" >
+                  <option value="proffecionals" >
+                 
+                </datalist>
+              </div>
+            </form>
+          </h2>
+
+      </div>
+
+
+  
+   
+
+
+
+
+    
+
+    <a href="#modal-closed" class="btn">create game</a>
+
+    <a href="#modal-closed" class="link-2"></a>
+
+  </div>
+</div>
+
+
+    </section>
     
     <section class="GameCreation" id="GameCreation">
     
@@ -50,7 +121,7 @@
                 <h3>Game seasion creation</h3>
            
                
-                <a href="#" class="btn">Create game</a>
+                <a href="#modal-opened" class="btn" id="modal-closed">Create Game</a>
             </div>
     
         </div>
@@ -77,14 +148,18 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                    
                     </div>
-                    <h3>du hast map</h3>
-                    <p>creator: Vlad Romaniuk</p>
+                   <div class="mapName"> <h3>du hast map</h3></div>
+
+                    <div class="creator"> <p>creator: Vlad Romaniuk</p></div>
+                   
+                    <div class="description"><p>for proffecionals</p></div>
                     <a href="#" class="btn">join game</a>
-                    <span class="PlayersOnMap">13/24</span>
+                    <span class="PlayersOnMap">0/24</span>
                 </div>
             </div>
+           
             <div class="box">
                 <div class="image">
                     <img src="src/cslogo.png" alt="">
@@ -94,15 +169,18 @@
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                        
                     </div>
-                    <h3>du hast map</h3>
-                    <p>creator: Vlad Romaniuk</p>
+                   <div class="mapName"> <h3>du hast map</h3></div>
+
+                    <div class="creator"> <p>creator: Vlad Romaniuk</p></div>
+                   
+                    <div class="description"><p>for intermediate players</p></div>
                     <a href="#" class="btn">join game</a>
-                    <span class="PlayersOnMap">13/24</span>
+                    <span class="PlayersOnMap">0/24</span>
                 </div>
             </div>
+           
             <div class="box">
                 <div class="image">
                     <img src="src/cslogo.png" alt="">
@@ -111,14 +189,20 @@
                 <div class="content">
                     <div class="stars">
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                       
                     </div>
-                    <h3>du hast map</h3>
-                    <p>creator: Vlad Romaniuk</p>
+                   <div class="mapName"> <h3>du hast map</h3></div>
+
+                    <div class="creator"> <p>creator: Vlad Romaniuk</p></div>
+                   
+                    <div class="description"><p>for beggibers</p></div>
+
+
                     <a href="#" class="btn">join game</a>
-                    <span class="PlayersOnMap">13/24</span>
+                    <span class="PlayersOnMap">0/24</span>
                 </div>
             </div>
+           
           
     
           
@@ -140,6 +224,9 @@
        
 
     </section>
+
+
+    <script src="./scripts/toggleMenu.js"></script>
 
 
     <script src="./scripts/toggleMenu.js"></script>
