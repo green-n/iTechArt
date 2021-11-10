@@ -73,9 +73,14 @@ width : 50%;
 .GameCreation .row .content {
 flex : 1 1 45rem;
 }
+.GameCreation .row .content h2 {
+    color : var(--black);
+    font-size : 5rem;
+    padding : 0.5rem 0;
+    }
 .GameCreation .row .content h3 {
 color : var(--black);
-font-size : 4rem;
+font-size : 2rem;
 padding : 0.5rem 0;
 }
 .GameCreation .row .content .icons-container {
@@ -106,13 +111,20 @@ color : var(--black);
 }
 .maps .box-container {
 display : grid;
-grid-template-columns : repeat(auto-fit,minmax(30rem,1fr));
+/* grid-template-columns : repeat(auto-fit,minmax(30rem,1fr)); */
+grid-template-columns: 1fr 1fr 1fr;
+
 gap : 1.5rem;
 }
+
+
+
 .maps .box-container .box {
 background : #fff;
 border : rgb(0, 0, 0, 0.2) solid 0.1rem;
 border-radius : 0.5rem;
+max-width: 30vp;
+
 }
 .maps .box-container .box .image {
 height : 25rem;
@@ -230,6 +242,7 @@ padding : 2rem;
       padding: 100,0,10,0;
 
   }
+
   
   .modal__title {
     font-size: 3.2rem;
