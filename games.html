@@ -50,13 +50,14 @@
             
         </h2>
 
-        <input type="text" value="nameIt">
+        <input type="text"  placeholder="choose name" id="nameItInput">
       </div>
+
       <div class="melement">
         <h2>choose map
             <form>
               <div>
-                <input list="browse" value="">
+                <input list="browse" value="" placeholder="choose map" id="chooseMapInput">
       
                 <datalist id="browse">
                   <option value="du hast map">
@@ -74,14 +75,14 @@
             
         </h2>
 
-        <input type="text" value="description">
+        <input type="text" value="description" id="descriptionInput">
 
       </div>
       <div class="melement">
-        <h2>choose map
+        <h2>choose difficulty
             <form>
               <div>
-                <input list="difficulty" value="">
+                <input list="difficulty" placeholder="choose difficulty" id="difficultyInput" value="">
        
                 <datalist id="difficulty" >
                   <option value="begginer" >
@@ -106,7 +107,7 @@
 
     
 
-    <a href="#modal-closed" class="btn">create game</a>
+    <a  href="#modal-closed" class="btn" id="push">create game</a>
 
     <a href="#modal-closed" class="link-2"></a>
 
@@ -144,79 +145,10 @@
         
         <h1 class="heading"> available games </h1>
     
-        <div class="box-container">
+        <div class="box-container" id="mapContainer">
     
-            <div class="box">
-                <div class="image">
-                    <img src="src/cslogo.png" alt="">
-                    <!-- <a href="#" class="fas fa-heart"></a> -->
-                </div>
-                <div class="content">
-
-                    <div class="name"><h3>sportBoys</h3></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    
-                    </div>
-                   <div class="mapName"> <h3>du hast map</h3></div>
-
-                    <div class="creator"> <p>creator: Vlad Romaniuk</p></div>
-                   
-                    <div class="description"><p>for proffecionals</p></div>
-                    <a href="#" class="btn">join game</a>
-                    <span class="PlayersOnMap">0/24</span>
-                </div>
-            </div>
-           
-            <div class="box">
-                <div class="image">
-                    <img src="src/cslogo.png" alt="">
-                    <!-- <a href="#" class="fas fa-heart"></a> -->
-                </div>
-                <div class="content">
-                    <div class="name"><h3>goodluck havefuns</h3></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        
-                    </div>
-                   <div class="mapName"> <h3>du hast map</h3></div>
-
-                    <div class="creator"> <p>creator: Vlad Romaniuk</p></div>
-                   
-                    <div class="description"><p>for intermediate players</p></div>
-                    <a href="#" class="btn">join game</a>
-                    <span class="PlayersOnMap">0/24</span>
-                </div>
-            </div>
-           
-            <div class="box">
-                <div class="image">
-                    <img src="src/cslogo.png" alt="">
-                    <!-- <a href="#" class="fas fa-heart"></a> -->
-                </div>
-                <div class="content">
-
-                    <div class="name"><h3>noobs</h3></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                       
-                    </div>
-                   <div class="mapName"> <h3>du hast map</h3></div>
-
-                    <div class="creator"> <p>creator: Vlad Romaniuk</p></div>
-                   
-                    <div class="description"><p>for beggibers</p></div>
-
-
-                    <a href="#" class="btn">join game</a>
-                    <span class="PlayersOnMap">0/24</span>
-                </div>
-            </div>
+        
+            
            
           
     
@@ -242,8 +174,10 @@
 
 
     <script src="./scripts/toggleMenu.js"></script>
+    <script src="./scripts/addingNewGameToTheList.js"></script>
+    <script src="./scripts/existingGames.js"></script>
 
 
-    <script src="./scripts/toggleMenu.js"></script>
+  
 </body>
 </html>
