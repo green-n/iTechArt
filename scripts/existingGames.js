@@ -1,11 +1,32 @@
-let Game = {
-    id: 1,
-    GameName: "Noobs",
-    GameMap: "Du Hast Map",
-    GameDifficulty:"begginer",
-    GameDescription:"for the begginers"
+let Game = [
+    {
+       id: 0,
+       GameName: "Noobs",
+       GameMap: "Du Hast Map",
+       GameDifficulty:"begginer",
+       GameDescription:"for the begginers"
+    },
 
-};
+    {
+        id: 1,
+        GameName: "SportBoys",
+        GameMap: "Du Hast Map",
+        GameDifficulty:"intermediate",
+        GameDescription:"Quick Game for fun"
+    },
+
+    {
+        id: 2,
+        GameName: "Pros",
+        GameMap: "Du Hast Map",
+        GameDifficulty:"profecionals",
+        GameDescription:"only blood and tears"
+    },   
+]
 
 
-CreateGameBoxInDom(Game.GameName,Game.GameMap,Game.GameDifficulty,Game.GameDescription);
+
+
+for(let i=0;i < Game.length;i++){
+CreateGameBoxInDom(Game[i].GameName,Game[i].GameMap,Game[i].GameDifficulty,Game[i].GameDescription);
+}

@@ -125,6 +125,16 @@ border-radius : 0.5rem;
 max-width: 30vp;
 
 }
+.delete{
+  max-width: 40px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.editer{
+  max-width: 60px;
+  margin-left: 10px;
+  margin-top:10px ;
+}
 .maps .box-container .box .image {
 height : 25rem;
 width : 100%;

@@ -7,11 +7,29 @@ document.querySelector('#push').onclick = function(){
     let difficulty = document.querySelector('#difficultyInput').value;
     let description = document.querySelector('#descriptionInput').value;
 
+let NewGame= {
+    id: Game.length,
+    GameName: gameName,
+    GameMap: mapName,
+    GameDifficulty: difficulty,
+    GameDescription: description
+}
+
+Game.push(NewGame);
+
+// alert(NewGame)
+
+
     CreateGameBoxInDom(gameName,mapName,difficulty,description);
+
+
+
 
 
    
 }
+
+
 
 
 
@@ -25,6 +43,12 @@ function CreateGameBoxInDom (gameName,mapName,difficulty,description){
  
         document.querySelector('#mapContainer').innerHTML += `
         <div class="box">
+        <button class="delete">
+        <i class="far fa-trash-alt"></i>
+        </button>
+        <button class="editer">
+        edit
+        </button>
         <div class="image">
             <img src="src/cslogo.png" alt="">
             <!-- <a href="#" class="fas fa-heart"></a> -->
@@ -46,7 +70,14 @@ function CreateGameBoxInDom (gameName,mapName,difficulty,description){
     </div>
 
         `;
-    }  
+    } 
+    
+    let currentTasks = document.querySelectorAll(".delete");
+    for(let i=0; i<currentTasks.length; i++){
+        currentTasks[i].onclick = function(){
+            this.parentNode.remove();
+        }
+    }
 
 }
 

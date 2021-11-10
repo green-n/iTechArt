@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/additionalStylesforGameMaps.css">
     
 
-    <title>Document</title>
+    <title>Games</title>
 </head>
 
 
@@ -43,7 +43,7 @@
 
     <div class="modal__details">
       <h1 class="modal__title">Create Game menu</h1>
-
+<form>
       <div class="melement">
         <h2>
             add name
@@ -55,7 +55,6 @@
 
       <div class="melement">
         <h2>choose map
-            <form>
               <div>
                 <input list="browse" value="" placeholder="choose map" id="chooseMapInput">
       
@@ -65,7 +64,6 @@
                   <option value="do re mi">
                 </datalist>
               </div>
-            </form>
           </h2>
 
       </div>
@@ -80,7 +78,6 @@
       </div>
       <div class="melement">
         <h2>choose difficulty
-            <form>
               <div>
                 <input list="difficulty" placeholder="choose difficulty" id="difficultyInput" value="">
        
@@ -93,8 +90,10 @@
                  
                 </datalist>
               </div>
-            </form>
+          
           </h2>
+
+        </form>
 
       </div>
 
@@ -176,6 +175,7 @@
     <script src="./scripts/toggleMenu.js"></script>
     <script src="./scripts/addingNewGameToTheList.js"></script>
     <script src="./scripts/existingGames.js"></script>
+    <script src="./scripts/FunctionForAddingNewElementToDom.js"></script>
 
 
   
