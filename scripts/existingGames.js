@@ -20,13 +20,27 @@ let Game = [
         GameName: "Pros",
         GameMap: "Du Hast Map",
         GameDifficulty:"profecionals",
-        GameDescription:"only blood and tears"
+        GameDescription:"only blood and tear"
     },   
 ]
 
 
+for(let i=0;i < Game.length;i++){
+    CreateGameBoxInDom(Game[i].GameName,Game[i].GameMap,Game[i].GameDifficulty,Game[i].GameDescription,Game[i].id,"game");
+    }
 
+
+
+function prestige(){
+
+
+let element = document.getElementById("mapContainer");
+while (element.firstChild) {
+  element.removeChild(element.firstChild);
+}
 
 for(let i=0;i < Game.length;i++){
-CreateGameBoxInDom(Game[i].GameName,Game[i].GameMap,Game[i].GameDifficulty,Game[i].GameDescription);
+CreateGameBoxInDom(Game[i].GameName,Game[i].GameMap,Game[i].GameDifficulty,Game[i].GameDescription,Game[i].id,"game");
+}
+
 }

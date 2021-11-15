@@ -1,0 +1,149 @@
+.UserCreation .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.UserCreation .row .image {
+    flex: 1 1 45rem;
+}
+
+.UserCreation .row .image img {
+    width: 200px;
+}
+
+.UserCreation .row .content {
+    flex: 1 1 45rem;
+}
+
+.UserCreation .row .content h2 {
+    color: var(--black);
+    font-size: 30px;
+    padding: 0.5rem 0;
+}
+
+.UserCreation .row .content h3 {
+    color: var(--black);
+    font-size: 2rem;
+    padding: 0.5rem 0;
+}
+
+.UserCreation .row .content .icons-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+}
+
+.UserCreation .row .content .icons-container .icons {
+    background: #eee;
+    border-radius: 0.5rem;
+    border: rgb(0, 0, 0, 0.2) solid 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 17rem;
+    padding: 1.5rem 1rem;
+}
+
+.UserCreation .row .content .icons-container .icons i {
+    font-size: 2.5rem;
+    color: var(--green);
+}
+
+.UserCreation .row .content .icons-container .icons span {
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.users .users-container {
+    display: grid;
+    /* grid-template-columns : repeat(auto-fit,minmax(30rem,1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.users .users-container .usersBox {
+    background: #fff;
+    border: rgb(0, 0, 0, 0.2) solid 0.1rem;
+    border-radius: 0.5rem;
+    max-width: 30vp;
+}
+
+.delete {
+    max-width: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.editer {
+    max-width: 60px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.users .users-container .usersBox .image {
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.users .users-container .usersBox .image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: scale-down;
+}
+
+.users .users-container .usersBox .image .fa-heart {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    color: var(--black);
+}
+
+.users .users-container .usersBox .image .fa-heart:hover {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.users .users-container .usersBox .content {
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.users users-container .usersBox .content .stars {
+    padding-bottom: 1rem;
+}
+
+.users .box-container .usersBox .content .stars i {
+    font-size: 1.7rem;
+}
+
+.users .users-container .usersBox .content h3 {
+    font-size: 2.5rem;
+}
+
+.users .users-container .usersBox .content p {
+    color: var(--light-color);
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.users users-container .usersBox .content .PlayersOnMap {
+    margin-left: 1rem;
+    font-size: 2.5rem;
+}
