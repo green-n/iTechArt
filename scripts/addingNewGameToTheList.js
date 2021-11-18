@@ -58,11 +58,8 @@ function CreateGameBoxInDom (gameName,mapName,difficulty,description,id,type){
     if(type=="game"){
  
         document.querySelector('#mapContainer').innerHTML += `
-        <div class="sacrifice">
-
-
         <div class="box">
-        <div class"trueBody">
+        
         <button class="delete">
         <i class="far fa-trash-alt"></i>
         </button>
@@ -154,8 +151,7 @@ function CreateGameBoxInDom (gameName,mapName,difficulty,description,id,type){
        <a  class="btn close-modal"  id="push" onclick="ChangesWelcome(${id})">apply changes</a>
     </div>
     </div>
-    </div>
-    </div>
+    
 
         `;
     } 

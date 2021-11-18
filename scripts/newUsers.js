@@ -28,26 +28,6 @@ prestigeForUsers()
 }
 
 
-function ChangesWelcome(id){
-    let gameName = document.querySelector('#nameItInput'+id).value;
-    let mapName = document.querySelector('#chooseMapInput'+id).value;
-    let difficulty = document.querySelector('#difficultyInput'+id).value;
-    let description = document.querySelector('#descriptionInput'+id).value;
-
-    console.log(id, gameName,mapName,difficulty,description);
-
-    Game[id].GameName=gameName;
-    Game[id].GameMap=mapName;
-    Game[id].GameDifficulty=difficulty;
-    Game[id].GameDescription=description;
-
-    prestige();
-
-
-
-
-}
-
 
 function ChangesUserData(id){
  
@@ -81,11 +61,11 @@ function CreateNewUserInDom(gameName,mapName,difficulty,description,id){
     else{
  
       document.querySelector('#userContainer').innerHTML += `
-      <div class="sacrifice">
+    
 
 
       <div class="usersBox">
-      <div class"trueBody">
+     
       <button class="delete">
       <i class="far fa-trash-alt"></i>
       </button>
@@ -174,8 +154,8 @@ function CreateNewUserInDom(gameName,mapName,difficulty,description,id){
      <a  class="btn close-modal"  id="push" onclick="ChangesUserData(${id})">apply changes</a>
   </div>
   </div>
-  </div>
-  </div>
+
+  
 
       `;
   }
