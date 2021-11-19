@@ -7,11 +7,15 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
+
+
 export default function TopBar() {
+
+
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
+      <AppBar position="static"  color="secondary" >
+        <Toolbar >
 
 
           
@@ -31,7 +35,7 @@ export default function TopBar() {
           </Typography> */}
 
           
-          <Button color="inherit">my profile</Button>
+          <Button color="inherit" sx={{ my: 1, mx: 1.5 }}>my profile</Button>
           <Button color="inherit">browse games</Button>
           <Button color="inherit">about us</Button>
           <Button color="inherit">Login</Button>
