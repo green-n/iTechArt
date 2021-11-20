@@ -1,5 +1,6 @@
-import { CorePage }  from './component/pages/CorePage.Component';
+import { TableOfGames }  from './component/pages/TablesOfGames';
 import './App.css';
+import  TopBar from './component/basicComponents/topBar/topBar';
 import React, { Component } from 'react'
 
 class App extends Component {
@@ -18,7 +19,8 @@ class App extends Component {
     return (
      
     <div className="App">
-      <CorePage/>
+       <TopBar/>
+      <TableOfGames/>
     </div>
     )
   }
