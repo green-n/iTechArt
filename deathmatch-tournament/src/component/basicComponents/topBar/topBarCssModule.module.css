@@ -1,0 +1,8 @@
+.TopBar{
+    text-align: right;
+}
+
+.btn:hover{
+    background-color: #4CAF50;
+    width: 100px;
+}
