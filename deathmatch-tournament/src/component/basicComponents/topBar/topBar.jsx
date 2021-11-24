@@ -15,13 +15,10 @@ export default function TopBar() {
 
 
   return (
-    <StylesProvider injectFirst>
-    <Box sx={{ flexGrow: 1 }}>
+   <StylesProvider injectFirst>
+     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static"  color="secondary" className={styles.TopBar}>
-        <Toolbar className={styles.TopBar}>
-
-
-          
+        <Toolbar className={styles.TopBar}>          
           {/* <IconButton
             size="large"
             edge="start"
@@ -44,7 +41,7 @@ export default function TopBar() {
           <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
-    </Box>
-    </StylesProvider>
+     </Box>
+   </StylesProvider>
   );
 }
