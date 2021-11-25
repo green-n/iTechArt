@@ -8,8 +8,8 @@ export default function CoreTableContainer() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="100vp">
-        <TableGrid/>
+      <Container maxWidth="80vp">
+        <TableGrid />
       </Container>
     </React.Fragment>
   );

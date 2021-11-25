@@ -40,7 +40,7 @@ export default function TopBar() {
           
           <Button color="inherit" sx={{ my: 1, mx: 1.5 }}>my profile</Button>
           <Button color="inherit">browse games</Button>
-          <Button  className={styles.btn}>about us</Button>
+          <Button color="inherit">about us</Button>
           <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
