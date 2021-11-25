@@ -53,7 +53,11 @@ class TableGrid extends Component {
 
   render()
   {
-    return (this.state.Game.map((obj)=>(
+    return (
+      <Box sx={{ flexGrow: 1 }}> 
+      <Grid container spacing={2}>
+      {this.state.Game.map((obj)=>(
+      <Grid item xs={6} md={4} key={obj.id}>
       <Cards
        id = {obj.id}
        Name = {obj.GameName}
@@ -61,7 +65,12 @@ class TableGrid extends Component {
        difficulty = {obj.GameDifficulty}
        desctiption = {obj.GameDescription} 
        />
-     )))
+       </Grid>
+     ))}
+     </Grid>
+     </Box>
+
+     )
   }
 }
 
