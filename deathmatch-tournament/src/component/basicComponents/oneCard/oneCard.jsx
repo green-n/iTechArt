@@ -85,24 +85,24 @@ export default function OneCard(props) {
           <p></p>
           
           
-         <Box sx={{ height:50,border: '10px',}}>
+         <Box sx={{ border: '10px',}}>
           <Grid container  spacing={1} 
            direction="row"
            justifyContent="center"
            alignItems="center">
            <Grid item  xs={3}>
-            <Box sx={{ height:30}}> <Typography variant="h4">0/24</Typography> </Box>
+            <Box> <Typography variant="h4">0/24</Typography> </Box>
            </Grid>
-           <Grid item  xs={3}><Button color="secondary" size="small" variant="outlined">edit</Button></Grid>
+           {/* <Grid item  xs={3}><Button color="secondary" size="small" variant="outlined">edit</Button></Grid>
            <Grid item  xs={3}><Button color="error" size="small" variant="outlined">delete</Button></Grid>
-           <Grid item  xs={3}><Button color="secondary" size="small" variant="outlined">join</Button></Grid>
+           <Grid item  xs={3}><Button color="secondary" size="small" variant="outlined">join</Button></Grid> */}
 
 
-           {/* <Grid item  xs={9}>
-             <Button color="secondary" size="small" variant="outlined">edit</Button>
-             <Button color="error" size="small" variant="outlined">delete</Button>
-             <Button color="secondary" size="small" variant="outlined">join</Button>
-           </Grid> */}
+           <Grid item  xs={9}>
+             <Button sx={{ my: 1.5, mx: 0.5 }} color="secondary" size="small" variant="outlined">edit</Button>
+             <Button sx={{ my: 1.5, mx: 0.5 }} color="error" size="small" variant="outlined">delete</Button>
+             <Button sx={{ my: 1.5, mx: 0.5 }} color="secondary" size="small" variant="outlined">join</Button>
+           </Grid>
            
           </Grid>
           </Box>

@@ -4,14 +4,15 @@ import SimpleContainer from "../basicComponents/container/container";
 import CoreTableContainer from "../basicComponents/mainTableContainer/mainTableContainer";
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import TableOfGames from "../basicComponents/tableOfGames/tableOfGames";
 
 
 
-export const TableOfGames =  () => (
+export const Games =  () => (
      <div className='PageStructure'>
       
-       <SimpleContainer></SimpleContainer>
-       <CoreTableContainer></CoreTableContainer>
+       <SimpleContainer/>
+       <TableOfGames/>
 
      </div>
  

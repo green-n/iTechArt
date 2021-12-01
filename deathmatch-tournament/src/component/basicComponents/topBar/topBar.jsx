@@ -10,6 +10,7 @@ import styles from './topBarCssModule.module.css'
 import { StylesProvider } from '@mui/styles';
 import Grid from '@mui/material/Grid'; 
 import { useHistory } from 'react-router-dom'; 
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 
 
 
@@ -19,9 +20,10 @@ export default function TopBar() {
 
   return (
     <StylesProvider injectFirst>
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }} sx={{paddingBottom:'30px'}}>
       <AppBar position="static"  color="secondary" className={styles.TopBar}>
         <Toolbar className={styles.TopBar}>
+          <HomeOutlinedIcon fontSize="large"/>
 
 
           
@@ -48,10 +50,10 @@ export default function TopBar() {
         justifyContent="flex-end"
         alignItems="center"
                 >
-          <Button color="inherit" sx={{ my: 1, mx: 1.5 }}>my profile</Button>
-          <Button color="inherit" href="/games">browse games</Button>
-          <Button color="inherit">about us</Button>
-          <Button color="inherit" href ="/singUp">LogIn/SingUp</Button>
+          <Button color="inherit" sx={{ my: 1, mx: 1.5 }} variant="outlined">my profile</Button>
+          <Button color="inherit" sx={{ my: 1, mx: 1.5 }} href="/games" variant="outlined">browse games</Button>
+          <Button color="inherit" sx={{ my: 1, mx: 1.5 }} variant="outlined">about us</Button>
+          <Button color="inherit" sx={{ my: 1, mx: 1.5 }} href ="/singUp" variant="outlined">LogIn/SingUp</Button>
 
       </Grid>
         </Toolbar>

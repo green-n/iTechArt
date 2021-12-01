@@ -50,7 +50,16 @@ class TableOfGames extends Component {
             GameMap: "Du Hast Map",
             GameDifficulty:"profecionals",
             GameDescription:"only blood and tear"
-        },  
+        }, 
+        {
+          id: 3,
+          GameName: "Pros",
+          GameMap: "Du Hast Map",
+          GameDifficulty:"profecionals",
+          GameDescription:"only blood and tear"
+      },
+      
+      
     ]
    
     };
@@ -61,8 +70,8 @@ class TableOfGames extends Component {
   render()
   {
     return (
-      <Box sx={{ flexGrow: 1 }}> 
-      <Grid  container justifyContent="space-evenly" spacing={2}>
+      <Box sx={{ flexGrow: 1 }} sx={{paddingTop:'30px',paddingLeft:'70px', paddingBottom:'100px'}}> 
+      <Grid  container  justifyContent="flex-start"  spacing={2}>
       {this.state.Game.map((obj)=>(
       <Grid item xs={6} md={3} key={obj.id}>
       <OneCard

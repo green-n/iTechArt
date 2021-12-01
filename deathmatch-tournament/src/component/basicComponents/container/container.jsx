@@ -6,6 +6,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import { Avatar } from '@mui/material';
+import styles from './container.module.css'
 
 
 
@@ -14,7 +15,7 @@ export default function SimpleContainer() {
     <React.Fragment>
       <CssBaseline />
      
-        <Box sx={{height:500}}>
+        <Box  className={styles.ContainerQuake}>
        
             <Grid
             container
@@ -28,7 +29,7 @@ export default function SimpleContainer() {
          
                   alt="Remy Sharp"
                   src="https://1000logos.net/wp-content/uploads/2020/09/Quake-logo.png"
-                  sx={{ width: 500, height: 500,paddingLeft:'100px',paddingTop:'40px' }}
+                  sx={{ width: 500, height: 500,paddingLeft:'200px',paddingTop:'40px', paddingBottom:'40px' }}
                   variant="square"
                   />
                 </Grid>

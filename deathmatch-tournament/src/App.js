@@ -1,9 +1,11 @@
-import { TableOfGames }  from './component/pages/TablesOfGames';
+import { Games }  from './component/pages/TablesOfGames';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import SingUp from './component/pages/registrationPage'
+import SingUp from './component/pages/registrationPage';
 import TopBar from './component/basicComponents/topBar/topBar';
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Footer from './component/basicComponents/footer/footer'
+import LogIn from './component/pages/logInPage';
 
 class App extends Component {
 
@@ -20,17 +22,22 @@ class App extends Component {
 
     return (
      
-    <div className="App">
+    <div >
+      <div className="App">
       <TopBar/>
       <BrowserRouter>
         <Routes>
-          <Route path="/games" element={<TableOfGames/>}/>
+          <Route path="/games" element={<Games/>}/>
           <Route path="/singUp" element={<SingUp/>}/>
+          <Route path="/logIn" element={<LogIn/>}/>
         </Routes>
       </BrowserRouter>
 
-   
-     
+      <Footer/>  
+      
+      
+      </div>
+       
     </div>
     )
   }
