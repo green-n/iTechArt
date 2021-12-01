@@ -8,6 +8,9 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import styles from './topBarCssModule.module.css'
 import { StylesProvider } from '@mui/styles';
+import Grid from '@mui/material/Grid'; 
+import { useHistory } from 'react-router-dom'; 
+
 
 
 
@@ -37,11 +40,20 @@ export default function TopBar() {
             
           </Typography> */}
 
-          
+
+
+      <Grid
+        container
+        direction="row"
+        justifyContent="flex-end"
+        alignItems="center"
+                >
           <Button color="inherit" sx={{ my: 1, mx: 1.5 }}>my profile</Button>
-          <Button color="inherit">browse games</Button>
+          <Button color="inherit" href="/games">browse games</Button>
           <Button color="inherit">about us</Button>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit" href ="/singUp">LogIn/SingUp</Button>
+
+      </Grid>
         </Toolbar>
       </AppBar>
     </Box>

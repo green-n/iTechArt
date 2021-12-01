@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import Cards from '../card/Card';
+import OneCard from '../oneCard/oneCard';
 import { Component } from 'react'
 
 
@@ -13,7 +13,7 @@ import { Component } from 'react'
 
 
 
-class TableGrid extends Component {
+class TableOfGames extends Component {
 
   constructor() {
         
@@ -43,7 +43,14 @@ class TableGrid extends Component {
             GameMap: "Du Hast Map",
             GameDifficulty:"profecionals",
             GameDescription:"only blood and tear"
-        },   
+        },  
+        {
+            id: 3,
+            GameName: "Pros",
+            GameMap: "Du Hast Map",
+            GameDifficulty:"profecionals",
+            GameDescription:"only blood and tear"
+        },  
     ]
    
     };
@@ -55,15 +62,15 @@ class TableGrid extends Component {
   {
     return (
       <Box sx={{ flexGrow: 1 }}> 
-      <Grid container spacing={2}>
+      <Grid  container justifyContent="space-evenly" spacing={2}>
       {this.state.Game.map((obj)=>(
-      <Grid item xs={6} md={4} key={obj.id}>
-      <Cards
+      <Grid item xs={6} md={3} key={obj.id}>
+      <OneCard
        id = {obj.id}
-       Name = {obj.GameName}
-       Map = {obj.GameDifficulty}
+       name = {obj.GameName}
+       map = {obj.GameDifficulty}
        difficulty = {obj.GameDifficulty}
-       desctiption = {obj.GameDescription} 
+       desctiptionOfGame = {obj.GameDescription} 
        />
        </Grid>
      ))}
@@ -77,4 +84,4 @@ class TableGrid extends Component {
 
 
 
-  export default TableGrid;
+  export default TableOfGames;
