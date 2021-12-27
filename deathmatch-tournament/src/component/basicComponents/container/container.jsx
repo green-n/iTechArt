@@ -15,7 +15,7 @@ export default function SimpleContainer() {
     <React.Fragment>
       <CssBaseline />
      
-        <Box  className={styles.ContainerQuake}>
+        <Box  className={styles.containerQuake}>
        
             <Grid
             container
@@ -23,17 +23,17 @@ export default function SimpleContainer() {
             justifyContent="space-around"
             alignItems="center"
               >
-                <Grid  xs={8} justifyContent="space-around"
+                <Grid  item xs={8} justifyContent="space-around"
             alignItems="center">
                 <Avatar
          
                   alt="Remy Sharp"
                   src="https://1000logos.net/wp-content/uploads/2020/09/Quake-logo.png"
-                  sx={{ width: 500, height: 500,paddingLeft:'200px',paddingTop:'40px', paddingBottom:'40px' }}
+                  sx={{ width: 400, height: 350,paddingLeft:'200px',paddingTop:'40px', paddingBottom:'40px' }}
                   variant="square"
                   />
                 </Grid>
-                <Grid  xs={4}>
+                <Grid  item xs={4}>
                   <Button variant="outlined" color="secondary">Create Game</Button>
                 </Grid>
 

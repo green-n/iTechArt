@@ -7,15 +7,48 @@ import { Grid } from '@mui/material';
 import { Avatar } from '@mui/material';
 import { Box } from '@mui/material';
 import {Stack} from '@mui/material';
+import IconButton from '@mui/material/IconButton';
 import styles from './footer.module.css'
+
+
 
 export default function Footer() {
     return (
-        <AppBar position="fixed" color="" sx={{top:'auto', bottom:0}}>
+        <AppBar position="fixed" className={styles.footer} sx={{top:'auto', bottom:0}}>
           <Container maxWidth="md">
             <Toolbar>
-                <Stack direction="row" spacing={2} align='center' sx={{ justifyContent:'center', textAlign:'center'}}>
-                    <div className={styles.AvatarContainer}>       
+              <Grid
+              container
+              
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              spacing={2}
+              >
+                <Grid item>
+                  <IconButton color="primary" aria-label="upload picture" component="span">     <Avatar
+                    variant="square"              
+                    src="/assets/images/fb.png"
+                    sx={{ width: 15, height: 36 }}
+                    />
+                    </IconButton></Grid>
+                    <Grid item>
+                    <IconButton color="primary" aria-label="upload picture" component="span">     <Avatar
+                    variant="square"              
+                    src="/assets/images/ig.png"
+                    sx={{ width: 30, height: 30 }}
+                    />
+                    </IconButton></Grid>
+                    <Grid item>
+                    <IconButton color="primary" aria-label="upload picture" component="span">     <Avatar
+                    variant="square"              
+                    src="/assets/images/tw.png"
+                    sx={{ width: 30, height: 30 }}
+                    />
+                    </IconButton></Grid>
+                </Grid>
+                {/* <Stack direction="row" spacing={2} align='center' sx={{ justifyContent:'center', textAlign:'center'}}>
+                    <div >       
                 
 
                     <Avatar
@@ -39,7 +72,9 @@ export default function Footer() {
 
                     </div>
 
-                   </Stack>
+                   </Stack> */}
+                 
+
                    
             </Toolbar>
           </Container>

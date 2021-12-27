@@ -13,73 +13,21 @@ import { Component } from 'react'
 
 
 
-class TableOfGames extends Component {
-
-  constructor() {
-        
-    super();
-
-    this.state = {
-      Game: [
-        {
-           id: 0,
-           GameName: "Noobs",
-           GameMap: "Du Hast Map",
-           GameDifficulty:"begginer",
-           GameDescription:"for the begginers"
-        },
-    
-        {
-            id: 1,
-            GameName: "SportBoys",
-            GameMap: "Du Hast Map",
-            GameDifficulty:"intermediate",
-            GameDescription:"Quick Game for fun"
-        },
-    
-        {
-            id: 2,
-            GameName: "Pros",
-            GameMap: "Du Hast Map",
-            GameDifficulty:"profecionals",
-            GameDescription:"only blood and tear"
-        },  
-        {
-            id: 3,
-            GameName: "Pros",
-            GameMap: "Du Hast Map",
-            GameDifficulty:"profecionals",
-            GameDescription:"only blood and tear"
-        }, 
-        {
-          id: 3,
-          GameName: "Pros",
-          GameMap: "Du Hast Map",
-          GameDifficulty:"profecionals",
-          GameDescription:"only blood and tear"
-      },
-      
-      
-    ]
-   
-    };
- 
-    };
+export default function TableOfGames (props){
 
 
-  render()
-  {
     return (
+      console.log(props.obj),
       <Box sx={{ flexGrow: 1 }} sx={{paddingTop:'30px',paddingLeft:'70px', paddingBottom:'100px'}}> 
       <Grid  container  justifyContent="flex-start"  spacing={2}>
-      {this.state.Game.map((obj)=>(
+      {props.obj.map((obj)=>(
       <Grid item xs={6} md={3} key={obj.id}>
       <OneCard
        id = {obj.id}
-       name = {obj.GameName}
-       map = {obj.GameDifficulty}
-       difficulty = {obj.GameDifficulty}
-       desctiptionOfGame = {obj.GameDescription} 
+       name = {obj.gameName}
+       map = {obj.gameDifficulty}
+       difficulty = {obj.gameDifficulty}
+       desctiptionOfGame = {obj.gameDescription} 
        />
        </Grid>
      ))}
@@ -88,9 +36,8 @@ class TableOfGames extends Component {
 
      )
   }
-}
 
 
 
 
-  export default TableOfGames;
+

@@ -14,7 +14,6 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 
-const theme = createTheme();
 
 export default function SignUp() {
   const handleSubmit = (event) => {
@@ -28,7 +27,7 @@ export default function SignUp() {
   };
 
   return (
-    <ThemeProvider theme={theme}>
+   
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
@@ -113,6 +112,6 @@ export default function SignUp() {
         </Box>
         
       </Container>
-    </ThemeProvider>
+   
   );
 }
